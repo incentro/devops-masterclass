@@ -1,6 +1,6 @@
 import subprocess
 
-container_name = "assignment-1"
+container_name = "assignment-2"
 
 
 def docker_build():
@@ -17,7 +17,7 @@ def docker_run():
     try:
         # Run 'docker run' command to run the built Docker image
         subprocess.run(
-            ["docker", "run","--name", container_name, "-p", "5000:5000", "-d", container_name], check=True
+            ["docker", "run","--name", container_name, "-p", "5001:5000", "-d", container_name], check=True
         )
     except subprocess.CalledProcessError as e:
         print("Error: Docker run failed.")

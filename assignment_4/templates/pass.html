@@ -3,6 +3,8 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
     <style>
         body {
@@ -13,10 +15,12 @@
         }
     </style>
 </head>
-
 <body>
     <h1 class="heading">Success!!!</h1>
-    <p class="heading">Your input was = "{{ input }}"</p>
+    <ul class="heading">
+        {% for word in words %}
+            <li>{{ word }}</li>
+        {% endfor %}
+    </ul>
 </body>
-
 </html>

@@ -3,6 +3,8 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
     <style>
         body {
@@ -16,8 +18,9 @@
 </head>
 
 <body>
-    <h1 class="heading">It appears that something has gone wrong. Did you update the input correctly?</h1>
-    <p class="heading">Your input was = "{{ input }}"</p>
+    <h1 class="heading">It appears that something has gone wrong. Connection to DB has failed: </h1>
+    <p class="heading">You might want to review the configurations...</p>
+    <p class="heading">{{ words }}</p>
 </body>
 
 </html>
