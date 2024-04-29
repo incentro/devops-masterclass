@@ -31,7 +31,9 @@ You will need a Windows, MacOS or Linux based system with at least `8GB RAM` and
 
 
 ## Running the Pipelines
-As mentioned above, the pipelines are all Python scripts. Run the following command to perform a pipeline deployment:`python pipeline_name.py`
+As mentioned above, the pipelines are all Python scripts. Run the following command to perform a pipeline deployment:
+
+`python pipeline_name.py`
 
 > [!NOTE] 
 > Each assignment can be found in their own directory. When running the pipeline scripts, make sure that you are running it from within in the correct assingment directory.  
