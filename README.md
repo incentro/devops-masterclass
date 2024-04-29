@@ -37,7 +37,7 @@ As mentioned above, the pipelines are all Python scripts. Run the following comm
 > Each assignment can be found in their own directory. When running the pipeline scripts, make sure that you are running it from within in the correct assingment directory.  
 
 
-> [!TIP] Python Virtual Environments (Optional)
+> [!TIP]
 If you already have Python on your machine and would like to perform these assignments wihtin an isolated environmnt, follow these steps: 
 >  ### Install and create environment
 > Run `pip install virtualenv` \
