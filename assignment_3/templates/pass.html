@@ -1,0 +1,26 @@
+<!-- templates/pass.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <style>
+        body {
+            background-color: green; /* Change the background color */
+        }
+        .heading {
+            color: white; /* Change the text color */
+        }
+    </style>
+</head>
+<body>
+    <h1 class="heading">Success!!!</h1>
+    <ul class="heading">
+        {% for word in words %}
+            <li>{{ word }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
