@@ -17,7 +17,7 @@ def docker_run():
     try:
         # Run 'docker run' command to run the built Docker image
         subprocess.run(
-            ["docker", "run","--name", container_name, "-p", "5001:5000", "-d", container_name], check=True
+            ["docker", "run","--name", container_name, "-p", "5002:5000", "-d", container_name], check=True
         )
     except subprocess.CalledProcessError as e:
         print("Error: Docker run failed.")

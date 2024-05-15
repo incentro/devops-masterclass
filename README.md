@@ -1,7 +1,7 @@
 # Devops Masterclass
 This repositories contains all the assignments meant to accompany the Devops masterclass for the collaboration between DXT and BA.
 
-## Explanation of Assignments 
+## Explanation of Assignments
 In this repository you will find several assignments meant to simulate the Devops experience when working with CI/CD automation along with its possible challenges. You can expect the challenge of these assignments to progressively increase as you work through them. 
 
 Each assignment contains the following files:
@@ -13,7 +13,7 @@ The applications as well as the pipeline scripts are all written in Python. The 
 
 Before you begin, take a good look at the requirements and pipeline instructions below and ensure that you have all the necessary installations.  
 
-## Requirements 
+## Requirements
 
 ### Hardware Requirements
 
@@ -36,7 +36,7 @@ As mentioned above, the pipelines are all Python scripts. Run the following comm
 `python pipeline_name.py`
 
 > [!NOTE] 
-> Each assignment can be found in their own directory. When running the pipeline scripts, make sure that you are running it from within in the correct assingment directory.  
+> Each assignment can be found in their own directory. When running the pipeline scripts, make sure that you are running it from within in the correct assignment directory.  
 
 
 > [!TIP]

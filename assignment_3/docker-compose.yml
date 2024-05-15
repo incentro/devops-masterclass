@@ -1,11 +1,11 @@
 services:
   flask-app:
-    container_name: assingment-3
-    build: 
+    container_name: assignment-3
+    build:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "5002:5002"
+      - "5003:5003"
     environment:
       - DB_NAME=db_name_
       - DB_USER=user
@@ -16,7 +16,7 @@ services:
       - db
   db:
     image: postgres:16.2-alpine
-    container_name: assingment-3-db
+    container_name: assignment-3-db
     restart: always
     environment:
       POSTGRES_DB: db_name
@@ -25,6 +25,6 @@ services:
     ports:
       # <Port exposed> : <Postgres Port running inside container> (Postgres port: 5432)
       - 5432:5432
-    # A SQL dump is used for populatinig DB upon creation 
+    # A SQL dump is used for populatinig DB upon creation
     volumes:
       - ./test_db.sql:/docker-entrypoint-initdb.d/dump.sql
