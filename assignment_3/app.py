@@ -20,7 +20,7 @@ DB_NAME = os.environ.get("DB_NAME")
 
 def get_db_connection():
     conn = psycopg2.connect(
-        host=DB_HOST, 
+        host=DB_HOST,
         database=DB_NAME,
         user=DB_USER,
         password=DB_PASSWORD,
@@ -34,11 +34,11 @@ def get_db_connection():
 @app.route("/")
 def webpage_display():
     try:
-        conn = get_db_connection()     
+        conn = get_db_connection()
 
     except psycopg2.Error as err:
         return render_template("fail.html", words=err.pgerror, title=assignment)
-    
+
     else:
         cur = conn.cursor()
         cur.execute('SELECT * FROM col;')
@@ -51,4 +51,4 @@ if __name__ == "__main__":
 
     # run() method of Flask class runs the application
     # on the local development server.
-    app.run(host="0.0.0.0", port=5002)
+    app.run(host="0.0.0.0", port=5003)
