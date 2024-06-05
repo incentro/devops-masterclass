@@ -15,17 +15,23 @@ Now that you have a bit of context regarding the important components, perform t
 2. Use the pipeline to deploy the application. To do this, run the pipline's python script by performing the command 
    
    ``` bash
-   python a0_pipeline.py
+   python a0-pipeline.py
    ```    
    or
 
     ``` bash
-    python3 a0_pipeline.py
+    python3 a0-pipeline.py
     ```    
 3. After this pipeline has completed its task use the command `docker ps` to get an overview of currently running containers. You can also view this overview in Docker Desktop if you are using that tool. 
 4. Once the previous steps have been successful, verify that the application's webpage up and running. The pipeline script runs the container locally and makes it accessible via port "5001". Open up your browser and enter the following in the search bar: `http://localhost:5001/`. If all went well you should see a green welcome page.
+5. Before moving on to the next assignment stop the container from running and remove it completely. To do this run the following commands: 
 
-By following these steps you have successfully completed this assignemnt and can move on to the rest. Before moving on be sure stop and remove the container that you deployed.    
+    ```bash 
+    docker container kill assignment-0 #To stop the container from running
+    docker container rm assignment-0 #To remove the container 
+    ```
+
+By following these steps you have successfully completed this assignment and can move on to the rest. Before moving on be sure stop and remove the container that you deployed.    
 
 > [!NOTE]
 > 1. The changes to the application can be seen at: `localhost:5001`. Port `5000` is the default port used by the application.  
