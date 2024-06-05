@@ -1,6 +1,6 @@
 # Assignment 1
 
-For this assignment, modify the application to display any word of your choice on the webpage. Once you have modified the application code, deploy the changes by running the pipline.    
+For this assignment, modify the application to display any word of your choice on the webpage. Once you have modified the application code, deploy the changes by running the pipline and verify that the application's webpage is up and running. 
 
 > [!NOTE]
 > 1. The changes to the application can be seen at: `localhost:5001`. Port `5000` is the default port used by the application.  
